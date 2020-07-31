@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #ed5564;
+  color: aliceblue;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+}
+
+.iconoPoke {
+  margin-left: 50px;
+  margin-right: 20px;
+  height: 50%;
+}
+
+.filtros__container {
+  margin: auto;
+}
+
+#searchPokemon {
+  background-color: #a8cae4;
+  color: #fff;
+  padding: 3px 5px;
+  border-color: rgba(191, 205, 231, 0.5);
+  border-radius: 5px;
+}
+
+.pokeCard__contenedor {
+  margin: auto;
+}
+
+.pokeCard {
+  margin-top: 100px;
+}
+
+.card {
+  background-color: rgb(116, 179, 231);
+  border: 5px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  border-style: outset;
+  border-color: rgba(67, 67, 136, 0.473);
+}
+
+#chartContainer {
+  width: 400px;
+  margin-top: 50px;
+}
+
+.pokeName {
+  color: aliceblue;
+  margin-top: 15px;
+}
+
+.pokeNum {
+  color: rgba(46, 46, 117, 0.774);
+  margin-top: -35px;
+}
+
+.pokeImg {
+  background-color: blanchedalmond;
+  border-radius: 50px;
+}
+
+.especial {
+  font-size: 12px;
+  color: rgba(46, 46, 117, 0.774);
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+.filtros {
+  margin: 0 25%;
+}
+
+.filtros__numero {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 16px;
+  color: rgba(46, 46, 117, 0.774);
+}
+
+h5 {
+  font-size: 20px;
+}
+
+
+
+
+
+

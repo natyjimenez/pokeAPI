@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apidex</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <img src="assets/img/transparent-pokeball.png" class="iconoPoke">
+        <h1>Apidex</h1>
+    </nav>
+
+    <!--Filtros búsqueda-->
+    <div class="filtros">
+        <div class="filtros__container row">
+            <!--Input consulta por número pokedex-->
+            <div class="filtros__numero col-sm-12 col-md-6">
+                <input type="number" name="cantidad" min="1" max="20" id="id" />
+                <input type="submit" value="Buscar Pokemon" onclick="buscarPokemon()" id="searchPokemon" />
+            </div>
+
+            <!-- filtro debilidad -->
+            <div class="filtros__nombre col-sm-12 col-md-6">
+                <select name="selectName" id="selectName" class="selectName">
+                    <option value="Nombre">Filtrar por debilidad</option>
+                    <option id="1">Bulbasaur</option>
+                    <option id="2">ivysaur</option>
+                    <option id="3">venusaur</option>
+                    <option id="4">charmander</option>
+                    <option id="5">charmeleon</option>
+                    <option id="6">charizard</option>
+                    <option id="7">squirtle</option>
+                    <option id="8">wartortle</option>
+                    <option id="9">blastoise</option>
+                    <option id="10">caterpie</option>
+                    <option id="11">metapod</option>
+                    <option id="12">butterfree</option>
+                    <option id="13">weedle</option>
+                    <option id="14">kakuna</option>
+                    <option id="15">beedrill</option>
+                    <option id="16">pidgey</option>
+                    <option id="17">pidgeotto</option>
+                    <option id="18">pidgeot</option>
+                    <option id="19">rattata</option>
+                    <option id="20">raticate</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!--Información dinámica pokémon-->
+    <div class="pokeCard container">
+        <div class="pokeCard__contenedor row">
+            <!--Card-->
+            <div class="pokeCard__cuerpo col-sm-12 col-md-6" id="cuerpo"></div>
+            <!--Gráfico-->
+            <div class="pokeCard__chart col-sm-12 col-md-6" id="chartContainer" style="height: 280px; width: 100%;">
+            </div>
+        </div>
+    </div>
+
+
+    <!--jQuery 3.5.1-->
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
