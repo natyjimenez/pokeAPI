@@ -30,6 +30,14 @@
   border-radius: 5px;
 }
 
+#searchPokemon2 {
+  background-color: #a8cae4;
+  color: #fff;
+  padding: 3px 5px;
+  border-color: rgba(191, 205, 231, 0.5);
+  border-radius: 5px;
+}
+
 .pokeCard__contenedor {
   margin: auto;
 }

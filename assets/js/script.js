@@ -23,7 +23,7 @@ function buscarPokemon() {
             };
             pokemones.push(pokemon);
             console.log(pokemones);
-
+            
             // Gráfico Canvas
             var options = {
                 exportEnabled: true,
